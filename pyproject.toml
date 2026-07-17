@@ -1,0 +1,22 @@
+[project]
+name = "sunpy_movies"
+dynamic = ["version"]
+description = "Super simple movie maker for a colleciton of Sunpy maps"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "astropy>=8.0.1",
+    "matplotlib>=3.11.0",
+    "mpl-animators>=1.2.4",
+    "nustar-pysolar",
+    "reproject>=0.21.0",
+    "sunpy>=8.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.21",
+]
+
+[tool.uv.sources]
+nustar-pysolar = { git = "https://github.com/NuSTAR/nustar_pysolar.git" }
